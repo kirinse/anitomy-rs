@@ -130,7 +130,8 @@ impl<'a> Token<'a> {
         } else if self.is_text() {
             let codepoints = self.value.chars().count();
             let numbers = self.value.chars().filter(|c| c.is_ascii_digit()).count();
-            numbers * 2 >= codepoints
+            // Don't allow e.g. S01 to be merged
+            numbers * 2 >= codepoints && self.value.chars().next().is_some_and(|s| s != 'S')
         } else {
             false
         }

@@ -2813,5 +2813,21 @@
             "audio_term": "AAC",
             "file_extension": "ass"
         }
+    },
+    {
+        "input": "NieR Automata.Ver1.1a.S01E13.WEBRip.Netflix.ja[cc].srt",
+        "notes": "The title is improperly parsed, but it's hard/impossible to fix it.",
+        "output": {
+            "title": "NieR Automata.Ver1.1a.",
+            "season": "01",
+            "episode": "13",
+            "source": [
+                "WEBRip",
+                "Netflix"
+            ],
+            "language": "ja",
+            "subtitles": "cc",
+            "file_extension": "srt"
+        }
     }
 ]
